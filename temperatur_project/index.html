@@ -21,7 +21,10 @@
         <!-- celcius -->
         <div class="celcius">
             <h3 class="celcius-text">celcius</h3>
-            <img src="img\Celcius-box.png" alt="celciusbox">
+            <div class="box">
+                <!-- <textarea placeholder="temperature in celcius"></textarea> -->
+                <img class="celciusbox" src="img\Celcius-box.png" alt="celciusbox">
+            </div>
         </div>
 
         <!-- fahrenheit -->
@@ -30,22 +33,28 @@
             <img src="img\Celcius-box.png" alt="celciusbox">
         </div>
     </section>
+    <textarea class="box-1" placeholder="temperature" id="celciusSuhu"></textarea>
+    <textarea class="box-2" placeholder="temperature" id="fahrenheitSuhu"></textarea>
+
     <section class="button">
-        <button>
+        <button id="convert">
             convert
         </button>
-        <button>
+        <button id="reverse">
             Reverse
         </button>
-        <button>
+        <button id="reset">
             Reset
         </button>
     </section>
     <div class="container">
         <div class="card">
             <h3>calculating</h3>
+            <p id="result"></p>
         </div>
     </div>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
